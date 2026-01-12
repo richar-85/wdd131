@@ -10,6 +10,7 @@ h1 {
 /* HEADER */
 header {
     background-color: #005fa3;
+    color: #ffffff;
     margin: 0 auto;
     
 }
@@ -26,7 +27,8 @@ header {
 
 /* NAV */
 nav {
-    background-color: black;
+    background-color: #000;
+    color: #ffffff;
     margin: 0 auto;
 }
 
@@ -36,7 +38,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
