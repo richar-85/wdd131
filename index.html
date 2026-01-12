@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamental - Richard Udonsa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Richard Udonsa." />
+    <meta name="author" content="Richard Udonsa" />
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+     <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
+
 <body>
-    <h1>WDD 131 - Richard Udonsa</h1>
+    <header>
+        <div class="title-bar">
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+                <li><a href="#" class="active">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Richard Udonsa</h1>
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        My name is Richard Udonsa. I am from Nigeria and currently work in a power transformer manufacturing company. I enjoy safe and fun outdoor activities.
+                    </p>
+
+                </div>
+                <img src="images/profile.jpg" alt="Photo of Richard Udonsa">
+            </div>
+
+            <h2 class="nigeria">Nigeria</h2>
+            <div class="nigeria-content">
+                <img src="images/nigeria.jpg" alt="Flag of Nigeria">
+                <div class="nigeria-text">
+                    <p>Nigeria is a country in West Africa known for its diverse cultures, languages, and vibrant traditions. It is often called the "Giant of Africa" because of its population and economic influence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
+        <p id= "lastModified"></p>
+    </footer>
 </body>
 </html>
