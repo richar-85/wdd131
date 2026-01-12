@@ -82,7 +82,7 @@ main h1 {
 
 .card h2 {
    background-color: #005fa3;
-    color: #fff;
+    color: #ffffff;
     padding: 1rem;
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -148,6 +148,7 @@ main h1 {
 /* FOOTER */
 footer {
     background-color: #005fa3;
+    color: #ffffff;
     margin: 0 auto;
     text-align: center;
 }
@@ -155,7 +156,7 @@ footer {
 footer p {
     display: block;
     margin: 0.25rem 0;
-    color: #fff;
+    color: #ffffff;
 }
 
 .highlight {
