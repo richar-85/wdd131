@@ -1,0 +1,35 @@
+@media (min-width: 740px) {
+    /*
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    */
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    /*
+    nav a {
+        flex: 1 1 100%;
+        padding: 1rem 1.5rem;
+    }
+    */
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        /*
+        max-width: 1200px;
+        margin: 0 auto;
+        */
+    }
+}

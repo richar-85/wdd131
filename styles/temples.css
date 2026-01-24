@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+    font-family: "Lato", sans-serif;
+    /*background-color: #fff;
+    color: #000;*/
+}
+
+header {
+    background-color: #3a146f;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid rgba(0, 0, 0 ,0.1)*/
+    
+}
+/*
+header,
+main {
+    margin: 0 auto;
+}
+*/
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.menu-toggle {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #3a146f;
+}
+
+
+nav ul {
+    list-style: none;
+    /*display: flex;*/
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    /*font-size: larger;*/
+    /*font-size: 1.1rem;*/
+}
+
+nav a:hover {
+    /*
+    text-decoration: underline
+double;
+    background-color: #eee;
+    color: #000;
+    */
+    background-color: #eee;
+    color: #000;    
+}
+
+.active {
+    color: yellow;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*main h2 {
+    margin: 1rem 0;
+}*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/*
+figure {
+    margin: 1rem auto;
+    width: 90%;
+    
+    margin: 0;
+}
+*/
+
+img {
+    width: 100%;
+    height:auto;
+    /*border-radius: 4px;*/
+}
+
+figcaption {
+    color: #3a146f;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #3a146f;
+    color: #fff;
+    text-align: center;
+    /*padding: 1rem 0;*/
+    padding: 1rem;
+    font-size: 0.8rem;
+}
