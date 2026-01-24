@@ -43,6 +43,8 @@ header h1 {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
     background-color: #3a146f;
 }
 
