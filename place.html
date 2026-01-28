@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Nigeria - Richard Udonsa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Richard Udonsa." />
+    <meta name="author" content="Richard Udonsa" />
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+     <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <!-- Hero Image-->
+        <section class="hero">
+            <picture>
+                <source srcset="images/nigeria_capital.webp" type="image/webp" media="(min-width: 768px)">
+                <img src="images/nigeria_capital.jpg" alt="Nigeria Capital">
+            </picture>
+
+            <!--Content Area-->
+            <div class="content">
+
+                <!--Data Section-->
+                <section class="data">
+                    <h2><span>Data</span></h2>
+                    <p><strong>Area:</strong> 923,768 sq km</p>
+                    <p><strong>Population:</strong> 227,882,945</p>
+                    <p><strong>Capital:</strong> Abuja</p>
+                    <p><strong>Languages:</strong> English</p>
+                    <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                    <p><strong>Time Zone:</strong> UTC+1</p>
+                    <p><strong>Calling Code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+                </section>
+
+                <!--Spacer for layout of larger screens-->
+                <div class="spacer"></div>
+
+                <!--Weather Section-->
+                <section class="weather">
+                    <h2>
+                        <span>Weather</span> 
+                        <span class="weather-emoji" aria-hidden="true">⛅</span>
+                    </h2>
+
+                    <img id="weather-icon" src="images/weather_icon.svg" alt="Weather icon">
+                    <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                    <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+                    <p><strong>Wind:</strong> <span id="wind"></span></p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
