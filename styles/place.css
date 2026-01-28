@@ -163,14 +163,6 @@ footer p {
         */
     }
 
-    .data h2::after {
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: var(--secondary-color);
-    margin-top: 0.5rem;
-}
-
     #weather-icon {
         display: none;
     }
@@ -179,5 +171,20 @@ footer p {
         display: inline;
         margin-left: 0.5rem;
     }
+}
 
+.data h2::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+.weather h2::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
 }
