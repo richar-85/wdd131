@@ -1,13 +1,18 @@
+:root {
+    --primary-color: #008751;
+    --secondary-color: #ffffff;
+}
+
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     
 }
 
 header {
-    background-color: #008751;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 1.5rem;
     text-align: center;
 }
@@ -38,7 +43,7 @@ header {
     margin: 0 auto 1.5rem auto;
     text-align: center;
     position: static;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
@@ -48,7 +53,7 @@ header {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     padding: 1rem;
 }
 
@@ -64,8 +69,8 @@ h2 {
 
 /* FOOTER */
 footer {
-    background-color: #008751;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0 auto;
     text-align: center;
     padding: 1rem;
@@ -74,7 +79,7 @@ footer {
 footer p {
     display: block;
     margin: 0.25rem 0;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .highlight {
@@ -130,7 +135,7 @@ footer p {
         width: 320px;
         padding: 1rem;
         border-radius: 4px;
-        box-shadow: 0 4px 12px regba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         background-color: rgba(255, 255, 255, 0.9);
     }
 
@@ -141,7 +146,7 @@ footer p {
         width: 320px;
         padding: 1rem;
         border-radius: 4px;
-        box-shadow: 0 4px 12px regba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         background-color: rgba(255, 255, 255, 0.9);
     }
 
@@ -149,8 +154,8 @@ footer p {
     .weather h2 {
         margin: -1rem -1rem 1rem -1rem;
         padding: 0.75rem 1rem;
-        background-color: #008751;
-        color: #ffffff;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 1.2rem;
         /*
         overflow: visible;
