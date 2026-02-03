@@ -4,8 +4,8 @@
         display: none;
     }
 
-    #navmenu {
-        display: flex;
+    #navmenu ul {
+        /*display: flex;*/
         flex-direction: row;
     }
 

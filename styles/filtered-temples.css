@@ -35,13 +35,16 @@ header {
 }
 
 /* NAVIGATION */
-#navmenu {
-    display: none;
+#navmenu ul {
+    display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     background-color: #3a146f;
 }
 
-#navmenu.open {
+#navmenu.open ul {
     display: flex;
 }
 
