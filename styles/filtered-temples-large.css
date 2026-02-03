@@ -1,5 +1,21 @@
+/* LARGE SCREENS */ 
+@media (min-width: 740px) { 
+    #hambutton { 
+        display: none; 
+    } 
+    #navmenu ul { 
+        display: flex; 
+        flex-direction: row; 
+    } 
+    #navmenu a { 
+        padding: 0.5rem 1rem; 
+    } 
+    .container { 
+        grid-template-columns: repeat(3, 1fr); 
+    } 
+}
 /* LARGE SCREENS */
-@media (min-width: 740px) {
+/*@media (min-width: 740px) {
     #hambutton {
         display: none;
     }
@@ -18,4 +34,4 @@
     .container {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+}*/
