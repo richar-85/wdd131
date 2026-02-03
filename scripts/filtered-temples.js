@@ -1,0 +1,203 @@
+/*
+const currentYear = document.querySelector("#currentYear");
+const lastModified = document.querySelector("#lastModified");
+
+// use the date object
+const today = new Date();
+const modifiedDate = new Date(document.lastModified);
+
+// Output Current Year
+currentYear.innerHTML = ` <span class="highlight">${new Intl.DateTimeFormat(
+	"en-US",
+	{
+		year: "numeric"
+	}
+).format(today)}</span>`;
+
+// Output Last Modified Date
+lastModified.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTimeFormat(
+	"en-US",
+	{
+		dateStyle: "short",
+        timeStyle: "medium"
+	}
+).format(modifiedDate)}</span>`;
+*/
+/***********************
+ * FOOTER DATE INFO
+ ***********************/
+let d = new Date();
+document.getElementById("currentYear").innerHTML = `&copy; ${d.getFullYear()}`;
+document.getElementById("lastModified").textContent =
+    `Recent Modification: ${document.lastModified}`;
+
+
+/***********************
+ * HAMBURGER MENU
+ ***********************/
+const hambutton = document.querySelector("#hambutton");
+const navmenu = document.querySelector("#navmenu");
+
+// set initial hamburger icon
+hambutton.textContent = "☰";
+
+hambutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleActive(navmenu);
+
+    // toggle icon between ☰ and ✖
+    hambutton.textContent = navmenu.classList.contains("open") ? "✖" : "☰";
+});
+
+function toggleActive(element) {
+    element.classList.toggle("open");
+}
+
+/*
+if (menuButton && navMenu) {
+    menuButton.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        
+        const isOpen = navMenu.classList.contains("open");
+        
+        menuButton.textContent = isOpen ? "✖" : "☰";
+        menuButton.setAttribute("aria-expanded", isOpen);
+    });
+}
+*/
+const temples = [
+  {
+    templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
+    area: 11500,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+  },
+  {
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+  },
+  {
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+  },
+  {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  // Add more temple objects here...
+  {
+    templeName: "Mendoza Argentina",
+    location: "Mendoza, Argentina",
+    dedicated: "2024, September, 22",
+    area: 21999,
+    imageUrl:
+      "images/mendoza_argentina_temple_exterior.jpg"
+  },
+  {
+    templeName: "Fortaleza Brazil",
+    location: "Fortaleza, Brazil",
+    dedicated: "2019, June, 2",
+    area: 36000,
+    imageUrl:
+      "images/exterior_fortaleza_temple.jpg"
+  },
+  {
+    templeName: "Bern Switzerland",
+    location: "Bern, Switzerland",
+    dedicated: "1992, October, 25",
+    area: 35546,
+    imageUrl:
+      "images/bern_switzerland_temple_lds.jpg"
+  },
+  {
+    templeName: "Hamilton New Zealand",
+    location: "Hamilton, New Zealand",
+    dedicated: "1958, April, 22",
+    area: 45251,
+    imageUrl:
+      "images/hamilton_new_zealand_lds_temple.jpg"
+  },
+  {
+    templeName: "London England",
+    location: "London, England",
+    dedicated: "1958, September, 9",
+    area: 42652,
+    imageUrl:
+      "images/london_england_temple_lds.jpg"
+  }
+];
+
+/***********************
+ * CREATE TEMPLE CARDS
+ ***********************/
+function createTempleCard(filteredTemples) {
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
+
+    filteredTemples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area.toLocaleString()} sq ft`;
+
+        img.src = temple.imageUrl;
+        img.alt = `${temple.templeName} Temple`;
+        img.loading = "lazy";
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        container.appendChild(card);
+    });
+}
+
+// Display all temples on load
+createTempleCard(temples);

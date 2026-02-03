@@ -1,0 +1,15 @@
+/* LARGE SCREENS */
+@media (min-width: 740px) {
+    #hambutton {
+        display: none;
+    }
+
+    #navmenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
