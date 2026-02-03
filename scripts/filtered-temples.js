@@ -41,8 +41,7 @@ const navmenu = document.querySelector("#navmenu");
 // set initial hamburger icon
 hambutton.textContent = "☰";
 
-hambutton.addEventListener("click", (e) => {
-    e.preventDefault();
+hambutton.addEventListener("click", () => {
     toggleActive(navmenu);
 
     // toggle icon between ☰ and ✖

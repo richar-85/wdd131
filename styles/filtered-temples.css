@@ -28,6 +28,8 @@ header {
 #hambutton {
     font-size: 1.8rem;
     color: white;
+    background: none;
+    border: none;
     text-decoration: none;
     cursor: pointer;
 }
