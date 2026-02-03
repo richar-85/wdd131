@@ -7,6 +7,8 @@
     #navmenu ul {
         display: flex;
         flex-direction: row;
+        width: auto;
+        background-color: transparent;
     }
 
     #navmenu a {
