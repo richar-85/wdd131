@@ -2,7 +2,8 @@
  * FOOTER DATE INFO
  ***********************/
 let d = new Date();
-document.getElementById("currentYear").innerHTML = `&copy; ${d.getFullYear()}`;
+document.getElementById("currentYear").textContent = d.getFullYear();
+/*document.getElementById("currentYear").innerHTML = `&copy; ${d.getFullYear()}`;*/
 document.getElementById("lastModified").textContent =
     `Recent Modification: ${document.lastModified}`;
 
