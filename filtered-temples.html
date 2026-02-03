@@ -25,13 +25,21 @@
 <body>
     <header>
         <h1 class="handler">Temple Album</h1>
-        <button href="#" id="hambutton"></button>
+        <button id="hambutton" type="button">☰</button>
+        <!--
         <nav id="navmenu">
             <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">HOME</a>
             <a href="#">Old</a>
             <a href="#">New</a>
             <a href="#">Large</a>
             <a href="#">Small</a>
+        </nav>-->
+        <nav id="navmenu">
+            <a href="#" data-filter="all">HOME</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
         </nav>
 
     </header>

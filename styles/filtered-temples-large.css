@@ -9,6 +9,10 @@
         flex-direction: row;
     }
 
+    #navmenu a {
+        padding: 0.5rem 1rem;
+    }
+
     .container {
         grid-template-columns: repeat(3, 1fr);
     }

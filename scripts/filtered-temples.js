@@ -1,28 +1,3 @@
-/*
-const currentYear = document.querySelector("#currentYear");
-const lastModified = document.querySelector("#lastModified");
-
-// use the date object
-const today = new Date();
-const modifiedDate = new Date(document.lastModified);
-
-// Output Current Year
-currentYear.innerHTML = ` <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		year: "numeric"
-	}
-).format(today)}</span>`;
-
-// Output Last Modified Date
-lastModified.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "short",
-        timeStyle: "medium"
-	}
-).format(modifiedDate)}</span>`;
-*/
 /***********************
  * FOOTER DATE INFO
  ***********************/
@@ -39,6 +14,13 @@ const hambutton = document.querySelector("#hambutton");
 const navmenu = document.querySelector("#navmenu");
 
 // set initial hamburger icon
+hambutton.addEventListener("click", () => {
+    navmenu.classList.toggle("open");
+    const isOpen = navmenu.classList.contains("open");
+    hambutton.textContent = isOpen ? "✖" : "☰";
+    hambutton.setAttribute("aria-expanded", isOpen);
+});
+/*
 hambutton.textContent = "☰";
 
 hambutton.addEventListener("click", () => {
@@ -51,6 +33,7 @@ hambutton.addEventListener("click", () => {
 function toggleActive(element) {
     element.classList.toggle("open");
 }
+*/    
 
 /*
 if (menuButton && navMenu) {
