@@ -4,49 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Temple Album - Richard Udonsa</title>
-    
-    <meta name="description" content="A responsive temple album compactable with mobile screen and large screen, created for WDD 131" />
+    <meta name="description" content="A responsive temple album compatible with mobile and large screens, created for WDD 131" />
     <meta name="author" content="Richard Udonsa" />
-
-     <!-- Google Fonts -->
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
-
-     <!-- JavaScript -->
+    
+    <!-- JavaScript -->
     <script src="scripts/filtered-temples.js" defer></script>
-
 </head>
-
 <body>
+    
     <header>
         <h1 class="handler">Temple Album</h1>
-        <button id="hambutton" type="button">☰</button>
-
-        <nav id="navmenu">
+        
+        <nav id="navmenu" role="navigation">
+            <button id="hambutton" type="button" aria-controls="navmenu" aria-expanded="false">☰</button>
             <ul>
-                <li><a href="#" data-filter="all">HOME</a></li>
-                <li><a href="#" data-filter="old">Old</a></li>
-                <li><a href="#" data-filter="new">New</a></li>
-                <li><a href="#" data-filter="large">Large</a></li>
-                <li><a href="#" data-filter="small">Small</a></li>
+                <li><a href="#" data-filter="all" aria-label="Show all temples">HOME</a></li>
+                <li><a href="#" data-filter="old" aria-label="Show old temples">Old</a></li>
+                <li><a href="#" data-filter="new" aria-label="Show new temples">New</a></li>
+                <li><a href="#" data-filter="large" aria-label="Show large temples">Large</a></li>
+                <li><a href="#" data-filter="small" aria-label="Show small temples">Small</a></li>
             </ul>
         </nav>
-
     </header>
-
-    <main>
+    
+    <main id="main">
         <h2>Home</h2>
-        <div class="container">
-
-        </div>
-
+        <div class="container"></div>
     </main>
-
+    
     <footer>
         <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
         <p id="lastModified"></p>

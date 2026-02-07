@@ -21,33 +21,7 @@ hambutton.addEventListener("click", () => {
     hambutton.textContent = isOpen ? "✖" : "☰";
     hambutton.setAttribute("aria-expanded", isOpen);
 });
-/*
-hambutton.textContent = "☰";
 
-hambutton.addEventListener("click", () => {
-    toggleActive(navmenu);
-
-    // toggle icon between ☰ and ✖
-    hambutton.textContent = navmenu.classList.contains("open") ? "✖" : "☰";
-});
-
-function toggleActive(element) {
-    element.classList.toggle("open");
-}
-*/    
-
-/*
-if (menuButton && navMenu) {
-    menuButton.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-        
-        const isOpen = navMenu.classList.contains("open");
-        
-        menuButton.textContent = isOpen ? "✖" : "☰";
-        menuButton.setAttribute("aria-expanded", isOpen);
-    });
-}
-*/
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -184,3 +158,39 @@ function createTempleCard(filteredTemples) {
 
 // Display all temples on load
 createTempleCard(temples);
+
+/***********************
+ * FILTER FUNCTIONALITY
+ ***********************/
+const filterButtons = document.querySelectorAll("#navmenu a");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const filter = button.getAttribute("data-filter");
+    let filteredTemples = temples;
+    
+    if (filter === "old") {
+      filteredTemples = temples.filter(t => new Date(t.dedicated) < new Date("2000-01-01"));
+    }
+
+    else if (filter === "new") {
+      filteredTemples = temples.filter(t => new Date(t.dedicated) >= new Date("2000-01-01"));
+    } 
+    
+    else if (filter === "large") {
+      filteredTemples = temples.filter(t => t.area > 50000);
+    } 
+    
+    else if (filter === "small") {
+      filteredTemples = temples.filter(t => t.area <= 50000);
+    }
+    
+    createTempleCard(filteredTemples);
+
+    // Highlight active button
+    filterButtons.forEach(b => b.classList.remove("active"));
+    button.classList.add("active");
+  });
+
+});
