@@ -6,19 +6,28 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+
     #hambutton { 
         display: none;
+    }
+
+    #navmenu {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
     }
     
     #navmenu ul { 
         display: flex; 
         flex-direction: row;
+        margin-top: 0;
+        background-color: transparent;
         width: auto;
         padding: 0;
     }
     
     #navmenu a {
+        width: auto;
         padding: 0.5rem 1rem; 
     }
     
