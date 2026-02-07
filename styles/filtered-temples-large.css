@@ -14,16 +14,16 @@
     #navmenu {
         flex-direction: row;
         justify-content: flex-end;
-        width: auto;
+        /*width: auto;*/
     }
     
     #navmenu ul { 
-        display: flex; 
+        /*display: flex;*/ 
         flex-direction: row;
         margin-top: 0;
         background-color: transparent;
         width: auto;
-        padding: 0;
+        /*padding: 0;*/
     }
     
     #navmenu a {
