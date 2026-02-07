@@ -47,7 +47,7 @@ header {
 
 /* NAVIGATION */
 #navmenu ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -71,7 +71,7 @@ header {
 
 #navmenu a:hover,
 #navmenu a.active {
-    background-color: none;
+    background-color: transparent;
     color: yellowgreen;
 }
 
