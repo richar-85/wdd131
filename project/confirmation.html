@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation | Weekend Soccer Pickup Game</title>
+    <meta name="description" content="Confirmation page for the Weekend Soccer Pickup Game sign-up.">
+    <meta name="author" content="Richard Udonsa">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/siteplan.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weekend Soccer Pickup Game</h1>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="details.html">Game-Details</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sign-up.html">Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Thank You for Signing Up! 🎉</h2>
+            <p>
+                Your response has been successfully submitted.
+                We are excited to have you join our weekend soccer pickup game.
+            </p>
+
+            <p>
+                Please check your email for any updates or changes
+                regarding game time or location.
+            </p>
+
+            <p>
+                If you have any questions, feel free to sign up again
+                or return to the home page.
+            </p>
+
+            <a class="button" href="siteplan.html">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent =
+            "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
