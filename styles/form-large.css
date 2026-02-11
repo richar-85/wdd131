@@ -1,0 +1,9 @@
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+    main {
+        margin: var(--spacing-medium);
+        padding: var(--spacing-medium);
+    }
+}
