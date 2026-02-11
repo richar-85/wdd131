@@ -3,139 +3,111 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131 - Product Review - Richard Udonsa</title>
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Richard Udonsa." />
-        <meta name="author" content="Richard Udonsa" />
+        <title>Product Review - Richard Udonsa</title>
+        <meta name="description" content="Product Review Form">
+        <meta name="author" content="Richard Udonsa">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
 
-        <!-- CSS -->
         <link rel="stylesheet" href="styles/form.css">
         <link rel="stylesheet" href="styles/form-large.css">
 
-        <!-- JavaScript -->
         <script src="scripts/form.js" defer></script>
     </head>
-
+    
     <body>
         <header>
             <h1>Product Review</h1>
         </header>
-
+        
         <main>
             <form method="get" action="review.html">
+                
                 <!-- Product Name -->
-                <label for="product">Product Name</label>
+                <label for="product">Product Name <span class="required"></span></label>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
 
                 <!-- Rating -->
-                <!-- <fieldset>
-                    <legend>Overall Rating</legend>
-                        <div class="stars"></div>   
-                            
-                            <label><input type="radio" name="rating" value="1" required> ★</label>
-                            <label><input type="radio" name="rating" value="2"> ★★</label>
-                            <label><input type="radio" name="rating" value="3"> ★★★</label>
-                            <label><input type="radio" name="rating" value="4"> ★★★★</label>
-                            <label><input type="radio" name="rating" value="5"> ★★★★★</label>
-                        </div>
-                </fieldset> -->
-                
-                <fieldset>
-                    <legend>Overall Rating</legend>
+                <fieldset aria-required="true">
+                    <legend>Overall Rating <span class="required"></span></legend>
 
                     <div class="rating-grid">
-
                         <div class="rating-item">
-                            <label for="rating1">
-                                <span class="star-display">★</span>
-                            </label>
+                            <label for="rating1">★</label>
                             <input type="radio" id="rating1" name="rating" value="1" required>
                         </div>
 
                         <div class="rating-item">
-                            <label for="rating2">
-                                <span class="star-display">★★</span>
-                            </label>
+                            <label for="rating2">★★</label>
                             <input type="radio" id="rating2" name="rating" value="2" required>
                         </div>
 
                         <div class="rating-item">
-                            <label for="rating3">
-                                <span class="star-display">★★★</span>
-                            </label>
+                            <label for="rating3">★★★</label>
                             <input type="radio" id="rating3" name="rating" value="3" required>
                         </div>
 
                         <div class="rating-item">
-                            <label for="rating4">
-                                <span class="star-display">★★★★</span>
-                            </label>
+                            <label for="rating4">★★★★</label>
                             <input type="radio" id="rating4" name="rating" value="4" required>
                         </div>
 
                         <div class="rating-item">
-                            <label for="rating5">
-                                <span class="star-display">★★★★★</span>
-                            </label>
+                            <label for="rating5">★★★★★</label>
                             <input type="radio" id="rating5" name="rating" value="5" required>
                         </div>
-
                     </div>
                 </fieldset>
-                
-                <!-- <fieldset>
-                    <legend>Overall Rating</legend>
-                    <div class="stars">
-                        <input type="radio" id="star5" name="rating" value="5" required>
-                        <label for="star5" title="5 stars">★</label>
-                        <input type="radio" id="star4" name="rating" value="4" required>
-                        <label for="star4" title="4 stars">★</label>
-                        <input type="radio" id="star3" name="rating" value="3" required>
-                        <label for="star3" title="3 stars">★</label>
-                        <input type="radio" id="star2" name="rating" value="2" required>
-                        <label for="star2" title="2 stars">★</label>
-                        <input type="radio" id="star1" name="rating" value="1" required>
-                        <label for="star1" title="1 stars">★</label>
-                    </div>
-                </fieldset> -->
-                
 
                 <!-- Installation Date -->
-                <div class="form-group">
-                    <label for="installDate">Date of Installation</label>
-                    <input type="date" id="installDate" name="installDate" required>
-                </div> 
+                <label for="installDate">Date of Installation <span class="required"></span></label>
+                <input type="date" id="installDate" name="installDate" required>
+
                 <!-- Features -->
                 <fieldset>
-                    <legend>What features did you find useful in the product? (check all that apply)</legend>
-                    <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
-                    <label for="feature2"><input type="checkbox" id="feature2" name="features" value="Ease of Use"> Ease of Use</label>
-                    <label for="feature3"><input type="checkbox" id="feature3" name="features" value="Performance"> Performance</label>
-                    <label for="feature4"><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+                    <legend>Useful Features (check all that apply)</legend>
+
+                    <label for="durability">
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        Durability
+                    </label>
+
+                    <label for="ease">
+                        <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                        Ease of Use
+                    </label>
+
+                    <label for="performance">
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        Performance
+                    </label>
+
+                    <label for="design">
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        Design
+                    </label>
                 </fieldset>
 
                 <!-- Written Review -->
-                <label for="review">Writen Review (Optional)</label>
-                <textarea id="review" name="review" rows="4" placeholder="Write your review here..." ></textarea>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4"></textarea>
 
-                <!-- Name -->
+                <!-- User Name -->
                 <label for="username">Your Name (Optional)</label>
-                <input type="text" id="username" name="username" placeholder="Enter your name">
+                <input type="text" id="username" name="username">
 
-                <!--Submit button-->
-                <input type="submit" value="Post Review">
+                <input type="submit" value="Submit Review">
+
             </form>
-
         </main>
 
         <footer>
-            <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
+            <p>&copy; <span id="currentYear"></span> Richard Udonsa</p>
             <p id="lastModified"></p>
         </footer>
     </body>

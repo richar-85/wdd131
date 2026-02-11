@@ -1,9 +1,17 @@
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-@media (max-width: 600px) {
+@media (min-width: 768px) {
+
     main {
-        margin: var(--spacing-medium);
-        padding: var(--spacing-medium);
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+
+    .rating-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rating-item {
+        flex: 1;
     }
 }
