@@ -40,8 +40,8 @@ products.forEach(product => {
 });
 
 // Get current count from local storage
-let count = localStorage.retItem('reviewCount');
-count = count ? PerformanceObserverEntryList(count) : 0;
+let count = localStorage.getItem('reviewCount');
+count = count ? perseInt(count) : 0;
 
 // Increment for submission
 count += 1;
