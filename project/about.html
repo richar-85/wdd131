@@ -16,40 +16,73 @@
 
         <!--CSS Link-->
         <link rel="stylesheet" href="styles/siteplan.css">
+        <link rel="stylesheet" href="styles/siteplan-large.css">
+
+        <!--JavaScript-->
+        <script src="scripts/siteplan.js" defer></script>
+
     </head>
 
     <body>
         <header>
-            <h1>Weekend Soccer Pickup Game</h1>
+            <div class="logo-title">
+                <img src="images/soccer_logo.PNG" alt="Soccer ball logo" width="50" height="50" loading="lazy">
+                <h1>Weekend Soccer Pickup Game</h1>
+            </div>
 
-            <nav>
-                <ul class="nav">
-                    <li><a href="siteplan.html">Home</a></li>
-                    <li><a href="details.html">Game-Details</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sign-up.html">Sign-Up</a></li>
+            <button id="menuBtn" aria-label="Open Navigation" aria-expanded="false">☰</button>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav" id="primaryNav">
+                    <li><a href="siteplan.html" class="nav-link">Home</a></li>
+                    <li><a href="details.html" class="nav-link">Game-Details</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="sign-up.html" class="nav-link">Sign-Up</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="about">
+            <section class="hero">
                 <h2>About This Site</h2>
                 <p>
-                    The Weekend Soccer Pickup Game website was created to bring members
-                    of the local community together through the love of soccer.
-                    It provides a simple and reliable way to share game information,
-                    including schedules, locations, and participation details.
+                    Building friendships and fitness through weekend soccer.
                 </p>
             </section>
 
             <section class="mission">
                     <h2>Our Mission</h2>
                     <p>
+                        The Weekend Soccer Pickup Game website was created to bring members
+                        of the local community together through the love of soccer.
+                        It provides a simple and reliable way to share game information,
+                        including schedules, locations, and participation details.
+
                         Our mission is to promote physical activity, teamwork, and social
                         interaction by making it easy for players of all skill levels to
                         find and join weekend soccer games.
                     </p>
+            </section>
+
+            <section class="info-grid">
+                <div>
+                    <h3>Who Can Join?</h3>
+                    <p>
+                        Anyone interested in recreational soccer is welcome. Whether you
+                        are a beginner learning the game or an experienced player looking for
+                        weekend competition, you'll find a place here.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Why Join Us?</h3>
+                    <ul>
+                        <li>Stay active and healthy</li>
+                        <li>Meet new people in the community</li>
+                        <li>Improve soccer skills</li>
+                        <li>Enjoy a fun and supportive environment</li>
+                    </ul>
+                </div>
             </section>
         </main>
 

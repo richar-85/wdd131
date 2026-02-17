@@ -14,77 +14,57 @@
 
         <!--CSS Link-->
         <link rel="stylesheet" href="styles/siteplan.css">
+        <link rel="stylesheet" href="styles/siteplan-large.css">
+
+        <!--JavaScript-->
+        <script src="scripts/siteplan.js" defer></script>
+
     </head>
 
     <body>
         <header>
-            <h1>Weekend Soccer Pickup Game</h1>
-            <p>The name Weekend Soccer Pickup Game 
-                was chosen because it clearly describes 
-                the purpose of the website. 
-            </p>
-            <p>It lets users 
-                immediately know that the site is about 
-                informal soccer games held on weekends and 
-                is designed for community members looking to 
-                participate in pickup-style soccer matches.
-            </p>
+            <div class="logo-title">
+                <img src="images/soccer_logo.PNG" alt="Soccer ball logo" width="50" height="50" loading="lazy">
+                <h1 class="handler">Weekend Soccer Pickup Game</h1> 
+            </div>
 
-            <nav>
-                <ul class="nav">
-                    <li><a href="siteplan.html">Home</a></li>
-                    <li><a href="details.html">Game-Details</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sign-up.html">Sign-Up</a></li>
+            <button id="menuBtn" aria-label="Open Navigation" aria-expanded="false">☰</button>
+            
+            <nav aria-label="Main Navigation">
+                <ul class="nav" id="primaryNav">
+                    <li><a href="siteplan.html" class="nav-link active">Home</a></li>
+                    <li><a href="details.html" class="nav-link">Game-Details</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="sign-up.html" class="nav-link">Sign-Up</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="Site-Purpose">
-                <h2>Site Purpose</h2>
-                <p>The purpose of the Weekend Soccer Pickup 
-                    Game website is to provide a central platform 
-                    where community members can find information about 
-                    weekend soccer pickup games.
-                </p>
-                <p>The site will share 
-                    game schedules, locations, and times, as well as 
-                    allow players to sign up to participate in upcoming games.
-                </p>
-                <p>This siteplan provides a platform to:</p>
-                <ul>
-                    <li>Post weekend soccer pickup game schedules</li>
-                    <li>Provide game locations and times</li>
-                </ul>
+            <section class="hero">
+                <h2>Weekend Community Soccer Games in Nigeria</h2>
+                <p>Friendly pickup soccer games for all skill levels.</p>
+                <a href="sign-up.html" class="btn">Sign Up Now</a>
             </section>
 
-            <section class="Targeted-Audience">
-                <h2>Targeted Audience</h2>
-                <p>Members of the community who enjoy soccer,
-                    including beginners and experienced players,
-                    looking for weekend social and recreational
-                    activity.
-                </p>
-            </section>
+            <section class="info-grid">
+                <div>
+                    <h2>Site Purpose</h2>
+                    <p>The purpose of the Weekend Soccer Pickup 
+                        Game website is to provide a central platform 
+                        where community members can find information about 
+                        weekend soccer pickup games.
+                    </p>
+                </div>
 
-            <section>
-                <h2>Scenarios</h2>
-                <h3>Scenario #1: Game Time</h3>
-                <p><strong>Question:</strong> "What time does the weekend 
-                    soccer pickup game start?"
-                </p>
-                <p><strong>Answer:</strong> The game time will be listed on 
-                    the Game Details page so players can plan their weekend schedule.
-                </p>
-
-                <h3>Scenario #2: Game Location</h3>
-                <p><strong>Question:</strong> "Where will the weekend soccer 
-                    pickup games be played?"
-                </p>
-                <p><strong>Answer:</strong> The game location will be provided on the 
-                    Game Details page, including the name of the field.
-                </p>
+                <div>
+                    <h2>Targeted Audience</h2>
+                    <p>Members of the community who enjoy soccer,
+                        including beginners and experienced players,
+                        looking for weekend social and recreational
+                        activity.
+                    </p>
+                </div>
             </section>
 
         </main>

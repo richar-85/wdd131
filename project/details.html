@@ -16,18 +16,27 @@
 
         <!--CSS Link-->
         <link rel="stylesheet" href="styles/siteplan.css">
+        <link rel="stylesheet" href="styles/siteplan-large.css">
+
+        <!--JavaScript-->
+        <script src="scripts/siteplan.js" defer></script>
     </head>
 
     <body>
         <header>
-            <h1>Weekend Soccer Pickup Game</h1>
+            <div class="logo-title">
+                <img src="images/soccer_logo.PNG" alt="Soccer ball logo" width="50" height="50" loading="lazy">
+                <h1>Weekend Soccer Pickup Game</h1>
+            </div>
 
-            <nav>
-                <ul class="nav">
-                    <li><a href="siteplan.html">Home</a></li>
-                    <li><a href="details.html">Game-Details</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sign-up.html">Sign-Up</a></li>
+            <button id="menuBtn" aria-label="Open Navigation" aria-expanded="false">☰</button>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav" id="primaryNav">
+                    <li><a href="siteplan.html" class="nav-link">Home</a></li>
+                    <li><a href="details.html" class="nav-link active">Game-Details</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="sign-up.html" class="nav-link">Sign-Up</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,8 +46,8 @@
                 <h2>Game Information</h2>
                 <ul>
                     <li><strong>Day:</strong> Saturday</li>
-                    <li><strong>Time:</strong> 7:00 AM – 9:00 AM</li>
-                    <li><strong>Location:</strong> Community Sports Field</li>
+                    <li><strong>Time:</strong> 7:00 AM - 9:00 AM</li>
+                    <li><strong>Location:</strong> Community Sports Field, Lagos Central Park, Lagos</li>
                 </ul>
             </section>
 
@@ -48,7 +57,8 @@
                     <li>Soccer boots or running shoes</li>
                     <li>Comfortable sportswear</li>
                     <li>Water bottle</li>
-                    <li>A positive attitude 😊</li>
+                    <li>A positive attitude <span aria-hidden="true">😀</span></li>
+                    
                 </ul>
             </section>
 
@@ -56,9 +66,8 @@
                 <h2>Basic Rules</h2>
                 <p>
                     This is a friendly pickup game focused on fun, fitness,
-                    and sportsmanship. Teams will be balanced be randomly 
-                    selected, and aggressive play is discouraged. 
-                    Respect for all players is expected.
+                    and sportsmanship. Teams will be randomly selected and 
+                    balanced, and aggressive play is discouraged.
                 </p>
             </section>
         </main>

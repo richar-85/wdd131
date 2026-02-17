@@ -14,25 +14,37 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+
+    <!--JavaScript-->
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Weekend Soccer Pickup Game</h1>
+        <div class="logo-title">
+            <img src="images/soccer_logo.PNG" alt="Soccer ball logo" width="50" height="50" loading="lazy">
+            <h1>Weekend Soccer Pickup Game</h1>
+        </div>
 
-        <nav>
-            <ul class="nav">
-                <li><a href="siteplan.html">Home</a></li>
-                <li><a href="details.html">Game-Details</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="sign-up.html">Sign-Up</a></li>
+        <button id="menuBtn" aria-label="Open Navigation" aria-expanded="false">☰</button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav" id="primaryNav">
+                <li><a href="siteplan.html" class="nav-link">Home</a></li>
+                <li><a href="details.html" class="nav-link">Game-Details</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sign-up.html" class="nav-link">Sign-Up</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="confirmation">
-            <h2>Thank You for Signing Up! 🎉</h2>
+        <section class="hero">
+            <h2>
+                Thank You for Signing Up!
+                <span aria-hidden="true">🎉</span>
+            </h2>
             <p>
                 Your response has been successfully submitted.
                 We are excited to have you join our weekend soccer pickup game.
@@ -43,12 +55,7 @@
                 regarding game time or location.
             </p>
 
-            <p>
-                If you have any questions, feel free to sign up again
-                or return to the home page.
-            </p>
-
-            <a class="button" href="siteplan.html">Back to Home</a>
+            <a href="siteplan.html" class="btn">Back to Home</a>
         </section>
     </main>
 
@@ -56,11 +63,5 @@
         <p>&copy; <span id="currentYear"></span> Richard Udonsa | Nigeria</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent =
-            "Last Modified: " + document.lastModified;
-    </script>
 </body>
 </html>
